@@ -1,0 +1,202 @@
+<!--
+  ORSHIENA Hair care Website 
+  created by:
+  Student Name :  1- Maryam Alrubaye ID: B1905.090004
+                  2- Azal Omer ID: B1805.090072
+                  3- Somaya Qalam ID: B1905.090091
+                  4- Rayan BRIBESH  ID: B2005.090017
+  Section : SEN264
+-->
+<!-- 
+  the file blog.html has our customers reviews :
+  at the header we have as Typical our logo then our navbar that we Explained in the index.html and then we have The page contains four pictures contents, and each one tells you about some product experiences from customers who have tried Orshina Products and how they feel about it.
+By clicking on one of them, the picture will become bigger and a short text will show up next to it.
+then we have our footer that gives the user the opertonty to send us email with their massages and reviews by using their email
+blog.html page is connected with blog.css to style the contents
+and JavaScript  file called blog.js which has the JavaScript code for the card Pictures and also the JavaScript file called slide to give the slider its movement ..
+** This page is totlly responsive (work with large,small,Medium screens)..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Stylesheet" href="css/blog.css">
+  <link rel="Stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/71f7ff4363.js"></script>
+  <title>Orshiena</title>
+</head>
+<body>
+   <!-- Header that contains the logo -->
+  <header> 
+    <!--THE LOGO IMG-->
+    <img src="img/IMG_0538.PNG" alt="logo" width="300" height="150">
+    </header>
+     <!-- our navbar that has the main contents -->
+    <nav class="navbar">
+      <div class="content">
+        <div><a href="#" id="logo">ORSHIENA</a></div>
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourStory.html">Our Story</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="product.html">Our Products</a></li>  
+            <li >
+              <a href="#"><i class="fas fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-shopping-bag"></i></a>
+            </li>
+            <li >
+              <a href="RegistrationSystem.html"><i class="fas fa-user"></i></a>
+            </li>        
+        </ul>
+        <!-- Cancel  BUTTON THAT APPEARS ONLY ON SAMLL SCREENS TO CLOZE THE BURGER MENU THAT CONTAINS THE NAVBAR IN SMALL SCREENS-->
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--slideshow begin-->
+    <div class="slideshow-container">
+      <!--slider content-->
+      <div class="mySlides fade">
+     
+        <img src="img/l.jpg" style="width:100%" alt="img">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="img/z.jpg" style="width:100%" alt="img">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="img/io.jpg" style="width:100%" alt="img">
+      </div>
+      </div>
+  <h2 class="card-header">
+    WE WILL Share OUR SECRETS WITH YOU..
+</h2>
+<!--Flipping card-->
+  <div class="cols">
+    <div class="col">
+      <!--Flipping  card content-->
+      <div class="container-blog">
+        <!--Flipping card image-->
+        <div class="front" style="background-image: url(https://image.freepik.com/free-photo/cheerful-redhead-woman-with-flying-curly-hair-smiling-laughing-with-closed-eyes_176420-14464.jpg)">
+          <!--flipping card inner view-->
+          <div class="inner">
+            <p>Orshiena</p>
+            <span>Blog</span>
+          </div>
+        </div>
+        <!--Flipping card back view-->
+        <div class="back">
+          <div class="inner">
+            <p style="color: rgba(0, 0, 0, 0.356);">Haircare is a must, and I'm here to show you the best product you should start with, orshiena is the best haircare line I've ever used I love the shampoo, I like the way they make their products so much better than any other hair care company out there.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--blog rivews cards Container -->
+<div class="card-container">
+  <!-- each card content-->
+  <div class="card-column column-0">
+    <div class="card card-color-0">
+      <div class="border"></div>
+      <img src="img/3650.jpg" alt="img" />
+      <h1>Trying Orshiena</h1>
+    </div>
+    <div class="card card-color-2">
+      <div class="border"></div>
+      <img src="img/5650.jpg" alt="img" />
+      <h1>How to use each product</h1>
+    </div>
+  </div>
+  <div class="card-column column-1">
+    <div class="card card-color-1">
+      <div class="border"></div>
+      <img src="img/4650.jpg" alt="img" />
+      <h1>Best of All!</h1>
+    </div>
+    <div class="card card-color-3">
+      <div class="border"></div>
+      <img src="img/650.jpg"  alt="img" />
+      <h1>Orshiena Professionals</h1>
+    </div>
+  </div>
+</div>
+
+<div id="cover" class="cover"></div>
+<!--open and close Review card content tags -->
+<div id="open-content" class="open-content">
+  <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+  <img id="open-content-image" src="#" alt="img"/>
+  <div class="text" id="open-content-text">
+  </div>
+</div>
+<br>
+<!--footer begin-->
+<footer class="footer-distributeds">
+
+  <div class="footer-left-blog">
+
+    <h3>We Care We<span> ♥ </span></h3>
+
+    <p class="footer-name">  Made with ♥ by ORSHIENA Group</p>
+
+    <div class="footer-iconz">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-right-blog">
+
+    <p>Contact Us</p>
+
+    <form action="#" method="post">
+
+      <input type="text" name="email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button>Send</button>
+
+    </form>
+
+  </div>
+
+</footer>
+
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+    body.classList.add("disabledScroll");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    cancelBtn.classList.remove("show");
+    body.classList.remove("disabledScroll");
+  }
+</script>
+  <script src="js/blog.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

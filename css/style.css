@@ -1,0 +1,565 @@
+/* 
+ORSHIENA Hair care Website 
+  created by:
+  Student Name :  1- Maryam Alrubaye ID: B1905.090004
+                  2- Azal Omer ID: B1805.090072
+                  3- Somaya Qalam ID: B1905.090091
+                  4- Rayan BRIBESH  ID: B2005.090017
+  Section : SEN264
+  this is the index.html CSS design page 
+ */
+*{
+  margin: 0;
+}
+header {  
+background: #f8f9fa;
+height: 15vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#logo{
+  font-family:Times New Roman;
+  font-size: 150%;
+  color:rgb(32, 32, 32);
+  text-decoration:none;
+}
+
+.content{
+  max-width: 2000px;
+  margin: auto;
+  padding: 0px 30px;
+}
+.navbar{
+  top: 0;
+  position: relative;
+  width: 100%;
+  transition: all 0.5s linear;
+  z-index: 1;
+}
+.navbar{
+  padding: 0px 0;
+  background: #f8f9fa;
+  box-shadow: 0px 3px 5px 0px #f8f9fa;
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: rgb(156, 88, 88);
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: rgb(254,196,208);
+}
+#centering{
+  text-align: center;
+}
+.icon{
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar.icon.cancel-btn{
+  top: 10px;
+}
+@media (max-width: 868px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 168, 185);
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.card-header{
+  padding: 2rem 1rem;
+	text-transform: uppercase;
+	font-family: "Franklin Gothic Medium";
+	color: #000000a1;
+	font-size: 1.875rem;
+	font-weight: 400;
+	letter-spacing: 0.2rem;
+	line-height: 1;
+	text-align: center;
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-pic {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card-pic {
+    height: 350px;
+  }
+}
+.card-pic:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  pointer-events: none;
+}
+.card-pic:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card-pic:nth-child(1):before {
+  background-image: url(https://image.freepik.com/free-photo/beautiful-woman-with-pink-hair-white-dress_91497-4164.jpg);
+}
+.card-pic:nth-child(2):before {
+  background-image: url(https://image.freepik.com/free-photo/close-up-portrait-charming-woman-with-yellow-eye-shadows-woman-white-blouse-cute-smiling-pink-background_197531-14941.jpg);
+}
+.card-pic:nth-child(3):before {
+  background-image: url(https://image.freepik.com/free-photo/lady-with-buns-covers-her-eye-with-juicy-orange-smiles-pink-background_197531-14942.jpg);
+}
+.card-pic:nth-child(4):before {
+  background-image: url(https://media.gettyimages.com/photos/cute-girl-with-beautiful-smile-and-pink-hair-on-pink-background-picture-id1187375229?s=2048x2048);
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+}
+.card-content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card-pic:after {
+    transform: translateY(0);
+  }
+
+  .card-content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .card-content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  .card-pic:hover,
+.card-pic:focus-within {
+    align-items: center;
+  }
+  .card-pic:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card-pic:hover:after,
+.card-pic:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card-pic:hover .card-content,
+.card-pic:focus-within .card-content {
+    transform: translateY(0);
+  }
+  .card-pic:hover .card-content > *:not(.title),
+.card-pic:focus-within .card-content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card-pic:focus-within:before, .card-pic:focus-within:after,
+.card-pic:focus-within .card-content,
+.card-pic:focus-within .card-content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+.box-feature{
+  width: 60%;
+
+}
+
+.box-feature img{
+  width: 100%;
+}
+
+.box-feature .cover-image{
+  animation: fade-in;
+  animation-duration: 5s;
+}
+
+.section-text h2 {
+  text-align: center; 
+}
+
+.section-text p {
+  text-align: justify;
+  margin: auto 2.5em;
+  line-height: 1.8em;
+}
+
+.samples {
+  flex-direction: column;
+  text-align: center;
+}
+
+.featured {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 5%;
+  margin: 20px auto;
+}
+
+.cont {
+  width: 100%;
+  color: black;  
+}
+
+.cont img{
+  max-width: 100%;
+}
+.cont a{
+  text-decoration: none;
+  color: #1d1d1d88;
+}
+@media all and (max-width: 768px){
+  
+.featured{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+}
+
+
+.footer-distributed{
+	background-color: #fdc5c8;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #424141;
+	font: normal 36px 'Times new roman', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #18181867;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #fdc5c8;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #0f0f0fb9;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #fdc5c8;
+	color: #2222229c;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #2e2d2da1;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #242423;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #2323249c;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #1b1b1b;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fdc5c8;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #2928287c;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/*  Responsive Footer */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

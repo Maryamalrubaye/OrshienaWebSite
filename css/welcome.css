@@ -1,0 +1,106 @@
+/* 
+ORSHIENA Hair care Website 
+  created by:
+  Student Name :  1- Maryam Alrubaye ID: B1905.090004
+                  2- Azal Omer ID: B1805.090072
+                  3- Somaya Qalam ID: B1905.090091
+                  4- Rayan BRIBESH  ID: B2005.090017
+  Section : SEN264
+  this is the home.php CSS design page which shows up after user Registeration
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+body {
+  background: #f2f5f2;
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: rgba(15, 15, 15, 0.651);
+}
+#nav {
+  background: #ef949b ;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#nav ul{
+  list-style: none;
+}
+#nav li {
+  display: inline-block;
+  padding: 10px;
+}
+#nav li:hover {
+  background:#ef949b;
+}
+#nav li:hover a{
+  color: black;
+}
+.content {
+  padding-top: 90px;
+}
+.anchor {
+  display: block; 
+}
+.title {
+  position: relative;
+  display: block;
+  top: -50px;
+  padding: 20px 0;
+  font-size: 1.9em;
+}
+.title:before{
+  font-size: 1.5em;
+  content: "\005B";
+}
+.title:after{
+  font-size: 1.5em;
+  content: "\005D";
+}
+.page-divider {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+  height: 100%; 
+  overflow: hidden;
+  background-size: cover;
+}
+.pgd1{background-image: url("https://image.freepik.com/free-photo/pretty-ladies-wide-striped-pants-laughing-happily-having-fun-floor_197531-9911.jpg");}
+.pgd2{background-image: url("https://image.freepik.com/free-photo/fascinating-emotional-girls-laughing-having-fun-portrait-joyful-friends-isolated-bright_197531-10951.jpg");}
+.page {
+  min-width: 200px;
+  padding: 50px 100px;
+}
+#page1 {background: rgb(239, 247, 250);}
+#page2 {background: rgb(238, 252, 246);}
+
+footer {
+  background-color: #ef949b;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: #ffffff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}

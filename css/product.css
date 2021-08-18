@@ -1,0 +1,160 @@
+/* 
+ORSHIENA Hair care Website 
+  created by:
+  Student Name :  1- Maryam Alrubaye ID: B1905.090004
+                  2- Azal Omer ID: B1805.090072
+                  3- Somaya Qalam ID: B1905.090091
+                  4- Rayan BRIBESH  ID: B2005.090017
+  Section : SEN264
+  this is the product.html CSS design page 
+ */
+
+.wrapper {
+  width: 100em;
+  margin: 4em auto;
+  background: #fff;
+  padding: 4em;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+}
+.wrapper > :first-child {
+  margin-top: 0;
+}
+.wrapper > :last-child {
+  margin-bottom: 0;
+}
+
+
+h1 {
+  margin: 0;
+}
+
+
+.wrapper {
+  width: 68em;
+}
+
+.product-grid {
+  width: 60em;
+  margin: 2rem auto;
+}
+.product-grid.product-grid--flexbox .product-grid__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-grid.product-grid--flexbox .product-grid__title {
+  height: auto;
+}
+.product-grid.product-grid--flexbox .product-grid__title:after {
+  display: none;
+}
+.product-grid__wrapper {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.product-grid__product-wrapper {
+  padding: 1rem;
+  float: left;
+  width: 33.33333%;
+}
+.product-grid__product {
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+}
+.product-grid__product:hover {
+  box-shadow: 0px 0px 0px 1px #eee;
+  z-index: 50;
+}
+.product-grid__product:hover .product-grid__extend {
+  display: block;
+}
+.product-grid__img-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 300px;
+}
+.product-grid__img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.product-grid__title {
+  margin-top: 0.875rem;
+  display: block;
+  font-size: 1.125em;
+  color: #222;
+  height: 3em;
+  overflow: hidden;
+  position: relative;
+}
+.product-grid__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2.4em;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%);
+}
+.product-grid__price {
+  color: rgb(250, 170, 170);
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+.product-grid__extend-wrapper {
+  position: relative;
+}
+.product-grid__extend {
+  display: none;
+  position: absolute;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0.4375rem -1rem 0;
+  box-shadow: 0px 0px 0px 1px #eee;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+.product-grid__extend:before {
+  content: "";
+  height: 0.875rem;
+  width: 100%;
+  position: absolute;
+  top: -0.4375rem;
+  left: 0;
+  background: #fff;
+}
+.product-grid__description {
+  font-size: 0.875em;
+  margin-top: 0.4375rem;
+  margin-bottom: 0;
+}
+.product-grid__btn {
+  display: inline-block;
+  font-size: 0.875em;
+  color: #777;
+  background: rgb(254,198,198);
+  padding: 0.5em 0.625em;
+  margin-top: 0.875rem;
+  margin-right: 0.625rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.product-grid__btn i.fa {
+  margin-right: 0.3125rem;
+}
+.product-grid__add-to-cart {
+  color: #fff;
+  background: rgb(254,198,198);
+}
+.product-grid__add-to-cart:hover {
+  background: rgb(254,198,198);
+}
+.product-grid__view {
+  color: #fff;
+  background: rgb(254,198,198);
+}

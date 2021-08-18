@@ -1,0 +1,239 @@
+<!--
+  ORSHIENA Hair care Website 
+  created by:
+  Student Name :  1- Maryam Alrubaye ID: B1905.090004
+                  2- Azal Omer ID: B1805.090072
+                  3- Somaya Qalam ID: B1905.090091
+                  4- Rayan BRIBESH  ID: B2005.090017
+  Section : SEN264
+-->
+<!--The index.html page has the html content of the home page of our website we used header that contains our logo that we designed Ourselves and then we have the navebar which contains the main contents of our Website (about us,blog,our product,shopping page,Wishlist and sign up system interation) then in the body we used a div that contains a slider then 2 section that has our home page contents then we put our footer.
+This index.html file is linked with a css file called style to style its contents and linked with JavaScript file caled slider to control the slider..
+also has a script tag that contains JavaScript  code that manage the side manue button that appers only on small screens.
+** This index.html page is totlly responsive (work with large,small,Medium screens)..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/71f7ff4363.js"></script>
+    <title>Orshiena</title>
+  </head>
+  <body>
+    <!-- Header that contains the logo -->
+    <header> 
+      <!--THE LOGO IMG-->
+          <img src="img/IMG_0538.PNG" alt="logo" width="300" height="150">
+          </header>
+          <!-- our navbar that has the main contents -->
+          <nav class="navbar">
+            <!-- THE DİV CONTAİNER THAT HAS THE NAVBAR OBJECTS-->
+            <div class="content">
+              <div><a href="#" id="logo">ORSHIENA</a></div>
+              <ul class="menu-list">
+                <!-- Cancel  BUTTON THAT APPEARS ONLY ON SAMLL SCREENS TO CLOZE THE BURGER MENU THAT CONTAINS THE NAVBAR IN SMALL SCREENS-->
+                <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourStory.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Our Products</a></li>  
+                  <li >
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="far fa-shopping-bag"></i></a>
+                  </li>
+                  <li >
+                    <a href="RegistrationSystem.html"><i class="fas fa-user"></i></a>
+                  </li>        
+              </ul>
+              <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+      <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!--Slideshow contents-->
+      <div class="mySlides fade">
+     
+        <img src="img/l.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="img/z.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="img/io.jpg" style="width:100%">
+      </div>
+      </div>
+    <br>
+    <!-- Texet that Appears after the slider-->
+    <h2 class="card-header">
+      We Will Take Care Of Your Haire..
+  </h2>
+  <!-- first section contains cards-->
+    <section class="page-content">
+      <!--each card content is in a div inside the section tag-->
+      <div class="card-pic">
+        <div class="card-content">
+          <h2 class="title">Beautiful Hair</h2>
+          <p class="copy">Our new Shampoo with No Sulfates, Parabens or gluten 
+            Color_Safe & Vegan</p>
+          <button class="btn">Treating Shampoo</button>
+        </div>
+      </div>
+      <div class="card-pic">
+        <div class="card-content">
+          <h2 class="title">Strong Hair</h2>
+          <p class="copy">Our new Deep Conditioner with No Sulfates, Parabens or gluten 
+            Color_Safe & Vegan</p>
+          <button class="btn">Deep Conditioner </button>
+        </div>
+      </div>
+      <div class="card-pic">
+        <div class="card-content">
+          <h2 class="title">Healthy Hair</h2>
+          <p class="copy">Our new Hair Mask with No Sulfates, Parabens or gluten Color_Safe & Vegan</p>
+          <button class="btn">Hair Mask</button>
+        </div>
+      </div>
+      <div class="card-pic">
+        <div class="card-content">
+          <h2 class="title">Shiny Hair</h2>
+          <p class="copy">Our new Hair Mask with No Sulfates, Parabens or gluten Color_Safe & Vegan</p>
+          <button class="btn">Extra Strength Oil</button>
+        </div>
+      </div>
+    </section>
+   <!--section 2 has some Images and Paragraph and a video-->
+    <section id="designs" class="samples">
+      <div>
+        <h2 class="card-header">Inventions</h2>
+        <p class="section-text">Take a look at some of our inventions that will change your hair forever</p>
+      </div>
+      <div class="featured">
+        <div class="cont">
+          <figure>
+            <img src="img/prof.jpeg" alt="img">
+            <figcaption>
+              <a href="#">Orshiena Professionals</a> 
+            </figcaption>
+          </figure>
+        </div>
+        
+
+        <div class="cont">
+          <figure>
+            <img src="img/myoil.jpeg" alt="img">
+            <figcaption>
+              <a href="#">Orshiena Extra Strength Oil</a>
+            </figcaption>
+          </figure>
+        </div>
+        
+       
+        <div class="cont">
+          <figure>
+            <img src="img/mask.jpeg" alt="img">
+            <figcaption>
+              <a href="#">Orshiena Hair Mask</a>
+            </figcaption>
+          </figure>
+        </div>
+        
+      </div>
+      <br>  <br>
+      <div >
+        <h2 class="card-header">Quick Prouducts Review </h2>
+        <p  class="section-text">Take a look at our amazing products that will give you the hair that you dreamed of.</p>
+      </div>
+      <br>  <br>
+      <div class="video-section">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/px9eetNoPXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!--the footer-->
+    <footer class="footer-distributed">
+<!--footer contents-->
+			<div class="footer-left">
+          <img src="img/IMG_0538.PNG" width="600" height="150">
+				<h3>ABOUT<span> Hair Care</span></h3>
+				
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>IAU</span>
+						Istanbul </p>
+			<br>
+					<i class="fa fa-phone"></i>
+					<p>+90 536 276 67 17</p>
+				<br>
+					<i class="fa fa-envelope"></i>
+					<p><a href="#">orshiena@gmail.com</a></p>
+				</div>
+          <br> <br>
+          <div>
+            <p class="footer-links">
+              <a href="#">Home</a>
+              |
+              <a href="#">Blog</a>
+              |
+              <a href="#">About</a>
+              |
+              <a href="#">Contact</a>
+            </p>
+          <br>
+            <p class="footer-company-name">   Made with ♥ by ORSHIENA Group</p>
+          </div>
+       
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About Orshiena</span> a group of girls looking for a product that is natural and good for all hair types. Which is rare to find. So, we decided to create something unique and innovative that will change the way people look at hair care. We have been working on it since 2013, and now we are ready for this line to blow people's mind to think of our products as natural hair care
+					</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+    <!--script tag to control the Burger  menue that appears on the side and has the navbar content only on small screens-->
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          menu.classList.add("active");
+          menuBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+          body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = ()=>{
+          menu.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          body.classList.remove("disabledScroll");
+        }
+    
+      </script>
+      <!--slider JavaScript linking file-->
+      <script src="js/slider.js"></script>
+
+    </body>
+    </html>
